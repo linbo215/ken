@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的私有云影院</title>
+  <style>
+    body { background: #141414; color: #fff; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 20px; padding-bottom: 60px; }
+    h1 { text-align: center; color: #E50914; margin-top: 30px; margin-bottom: 10px; }
+    .subtitle { text-align: center; color: #aaa; margin-bottom: 30px; font-size: 14px; }
+    .nav-bar { display: flex; justify-content: center; gap: 15px; margin-bottom: 30px; flex-wrap: wrap; }
+    .nav-btn { background: #222; border: 1px solid #444; color: #fff; padding: 10px 25px; border-radius: 20px; cursor: pointer; font-weight: bold; transition: all 0.2s; }
+    .nav-btn:hover, .nav-btn.active { background: #E50914; border-color: #E50914; box-shadow: 0 0 10px rgba(229,9,20,0.5); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+    .card { background: #1f1f1f; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.5); transition: transform 0.2s; display: flex; flex-direction: column; }
+    .card:hover { transform: scale(1.04); }
+    .poster-wrapper { position: relative; width: 100%; padding-bottom: 145%; background: #2c2c2c; }
+    .poster-wrapper img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s; }
+    .play-btn { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); color: white; display: flex; align-items: center; justify-content: center; text-decoration: none; font-weight: bold; font-size: 16px; opacity: 0; transition: opacity 0.2s; z-index: 2; }
+    .poster-wrapper:hover .play-btn { opacity: 1; }
+    .info { padding: 10px; flex-grow: 1; text-align: center; display: flex; align-items: center; justify-content: center; }
+    .info h3 { margin: 0; font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color: #eee; line-height: 1.4; }
+    .loading { text-align: center; color: #aaa; grid-column: 1 / -1; padding: 50px; }
+    .pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 40px; margin-bottom: 20px; flex-wrap: wrap; }
+    .page-btn { background: #222; border: 1px solid #444; color: #fff; padding: 8px 14px; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold; transition: all 0.2s; min-width: 38px; box-sizing: border-box; text-align: center; }
+    .page-btn:hover:not(:disabled):not(.active) { background: #333; border-color: #E50914; }
+    .page-btn.active { background: #E50914; border-color: #E50914; color: white; cursor: default; }
+    .page-btn:disabled { background: #141414; color: #444; border-color: #222; cursor: not-allowed; }
+    .page-ellipsis { color: #666; padding: 0 4px; font-weight: bold; }
+    .page-summary { color: #888; font-size: 13px; margin-left: 10px; display: inline-block; }
+  </style>
+</head>
+<body>
+  <h1>🎬 我的私有媒体中心</h1>
+  <div class="subtitle">由 GitHub + Cloudflare Pages 强力驱动</div>
+  <div class="nav-bar">
+    <button class="nav-btn" onclick="switchCategory('科幻片', this)">科幻片</button>
+    <button class="nav-btn" onclick="switchCategory('动作片', this)">动作片</button>
+    <button class="nav-btn" onclick="switchCategory('恐怖片', this)">恐怖片</button>
+    <button class="nav-btn" onclick="switchCategory('战争片', this)">战争片</button>
+    <button class="nav-btn" onclick="switchCategory('未分类', this)">未分类</button>
+  </div>
+  <div class="grid" id="movie-grid">
+    <div class="loading">请选择上方分类查看影片...</div>
+  </div>
+  <div class="pagination" id="pagination-ctrl" style="display: none;"></div>
+  <script>
+    let currentCategoryData = []; 
+    let currentCategoryName = ''; 
+    let currentPage = 1;          
+    const ITEMS_PER_PAGE = 40;    
+    const PARSE_API = "https://yparse.ik9.cc/index.php?url=";
+
+    async function switchCategory(catName, btnElement) {
+      document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+      if(btnElement) btnElement.classList.add('active');
+      currentCategoryName = catName;
+      currentPage = 1; 
+      const grid = document.getElementById('movie-grid');
+      const pager = document.getElementById('pagination-ctrl');
+      pager.style.display = 'none';
+      grid.innerHTML = '<div class="loading">正在全速加载分类数据...</div>';
+      try {
+        const response = await fetch("/" + catName + ".json");
+        if (!response.ok) throw new Error('未找到该分类的数据文件');
+        currentCategoryData = await response.json();
+        if (currentCategoryData.length === 0) {
+          grid.innerHTML = '<div class="loading">该分类下暂无影片</div>';
+          return;
+        }
+        renderPage();
+      } catch (err) {
+        grid.innerHTML = '<div class="loading" style="color: #cc3333;">❌ 加载失败: ' + err.message + '</div>';
+      }
+    }
+
+    function renderPage() {
+      const grid = document.getElementById('movie-grid');
+      const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+      const endIndex = startIndex + ITEMS_PER_PAGE;
+      const pageMovies = currentCategoryData.slice(startIndex, endIndex);
+      const totalPages = Math.ceil(currentCategoryData.length / ITEMS_PER_PAGE);
+      let cardHtml = '';
+      pageMovies.forEach(movie => {
+        const posterUrl = "/" + currentCategoryName + "/" + movie.title + "-poster.jpg";
+        const parsedPlayUrl = PARSE_API + encodeURIComponent(movie.url);
+        cardHtml += '<div class="card"><div class="poster-wrapper">';
+        cardHtml += '<img src="' + posterUrl + '" loading="lazy" alt="' + movie.title + '" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1485846234645-a62644f84728?w=350';">';
+        cardHtml += '<a class="play-btn" href="' + parsedPlayUrl + '" target="_blank">▶ 网页播放</a></div>';
+        cardHtml += '<div class="info"><h3>' + movie.title + '</h3></div></div>';
+      });
+      grid.innerHTML = cardHtml;
+
+      const pager = document.getElementById('pagination-ctrl');
+      if (totalPages > 1) {
+        pager.style.display = 'flex';
+        let pagerHtml = '';
+        pagerHtml += '<button class="page-btn" ' + (currentPage === 1 ? 'disabled' : '') + ' onclick="goToPage(' + (currentPage - 1) + ')">‹</button>';
+        let startPage = Math.max(1, currentPage - 2);
+        let endPage = Math.min(totalPages, startPage + 4);
+        if (endPage - startPage < 4) startPage = Math.max(1, endPage - 4);
+        if (startPage > 1) {
+          pagerHtml += '<button class="page-btn" onclick="goToPage(1)">1</button>';
+          if (startPage > 2) pagerHtml += '<span class="page-ellipsis">...</span>';
+        }
+        for (let i = startPage; i <= endPage; i++) {
+          pagerHtml += '<button class="page-btn ' + (i === currentPage ? 'active' : '') + '" onclick="goToPage(' + i + ')">' + i + '</button>';
+        }
+        if (endPage < totalPages) {
+          if (endPage < totalPages - 1) pagerHtml += '<span class="page-ellipsis">...</span>';
+          pagerHtml += '<button class="page-btn" onclick="goToPage(' + totalPages + ')">' + totalPages + '</button>';
+        }
+        pagerHtml += '<button class="page-btn" ' + (currentPage === totalPages ? 'disabled' : '') + ' onclick="goToPage(' + (currentPage + 1) + ')">›</button>';
+        pagerHtml += '<span class="page-summary">共 ' + currentCategoryData.length + ' 部</span>';
+        pager.innerHTML = pagerHtml;
+      } else {
+        pager.style.display = 'none';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function goToPage(pageNumber) {
+      currentPage = pageNumber;
+      renderPage();
+    }
+    window.onload = () => {
+      const firstBtn = document.querySelector('.nav-btn');
+      if(firstBtn) firstBtn.click();
+    };
+  </script>
+</body>
+</html>
