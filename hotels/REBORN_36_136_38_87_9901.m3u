@@ -1,0 +1,95 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="CCTV1综合" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV1综合.png" group-title="Hotel_36.136.38.87:9901",CCTV1综合
+http://36.136.38.87:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV2财经" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV2财经.png" group-title="Hotel_36.136.38.87:9901",CCTV2财经
+http://36.136.38.87:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV4国际" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV4国际.png" group-title="Hotel_36.136.38.87:9901",CCTV4国际
+http://36.136.38.87:9901/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV5体育" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV5体育.png" group-title="Hotel_36.136.38.87:9901",CCTV5体育
+http://36.136.38.87:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV7军农" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV7军农.png" group-title="Hotel_36.136.38.87:9901",CCTV7军农
+http://36.136.38.87:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV9纪录" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV9纪录.png" group-title="Hotel_36.136.38.87:9901",CCTV9纪录
+http://36.136.38.87:9901/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV10科教" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV10科教.png" group-title="Hotel_36.136.38.87:9901",CCTV10科教
+http://36.136.38.87:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV11戏曲" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV11戏曲.png" group-title="Hotel_36.136.38.87:9901",CCTV11戏曲
+http://36.136.38.87:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV12社会与法" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV12社会与法.png" group-title="Hotel_36.136.38.87:9901",CCTV12社会与法
+http://36.136.38.87:9901/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV13新闻" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV13新闻.png" group-title="Hotel_36.136.38.87:9901",CCTV13新闻
+http://36.136.38.87:9901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV14少儿" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV14少儿.png" group-title="Hotel_36.136.38.87:9901",CCTV14少儿
+http://36.136.38.87:9901/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV15音乐" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV15音乐.png" group-title="Hotel_36.136.38.87:9901",CCTV15音乐
+http://36.136.38.87:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://tb.yubo.qzz.io/logo/湖南卫视.png" group-title="Hotel_36.136.38.87:9901",湖南卫视
+http://36.136.38.87:9901/tsfile/live/0128_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="上海卫视" tvg-logo="https://tb.yubo.qzz.io/logo/上海卫视.png" group-title="Hotel_36.136.38.87:9901",上海卫视
+http://36.136.38.87:9901/tsfile/live/0107_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://tb.yubo.qzz.io/logo/江苏卫视.png" group-title="Hotel_36.136.38.87:9901",江苏卫视
+http://36.136.38.87:9901/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="广西卫视" tvg-logo="https://tb.yubo.qzz.io/logo/广西卫视.png" group-title="Hotel_36.136.38.87:9901",广西卫视
+http://36.136.38.87:9901/tsfile/live/0113_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://tb.yubo.qzz.io/logo/浙江卫视.png" group-title="Hotel_36.136.38.87:9901",浙江卫视
+http://36.136.38.87:9901/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://tb.yubo.qzz.io/logo/北京卫视.png" group-title="Hotel_36.136.38.87:9901",北京卫视
+http://36.136.38.87:9901/tsfile/live/0122_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="四川卫视" tvg-logo="https://tb.yubo.qzz.io/logo/四川卫视.png" group-title="Hotel_36.136.38.87:9901",四川卫视
+http://36.136.38.87:9901/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://tb.yubo.qzz.io/logo/广东卫视.png" group-title="Hotel_36.136.38.87:9901",广东卫视
+http://36.136.38.87:9901/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://tb.yubo.qzz.io/logo/深圳卫视.png" group-title="Hotel_36.136.38.87:9901",深圳卫视
+http://36.136.38.87:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="安徽卫视" tvg-logo="https://tb.yubo.qzz.io/logo/安徽卫视.png" group-title="Hotel_36.136.38.87:9901",安徽卫视
+http://36.136.38.87:9901/tsfile/live/0130_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="湖北卫视" tvg-logo="https://tb.yubo.qzz.io/logo/湖北卫视.png" group-title="Hotel_36.136.38.87:9901",湖北卫视
+http://36.136.38.87:9901/tsfile/live/0132_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="天津卫视" tvg-logo="https://tb.yubo.qzz.io/logo/天津卫视.png" group-title="Hotel_36.136.38.87:9901",天津卫视
+http://36.136.38.87:9901/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="陕西卫视" tvg-logo="https://tb.yubo.qzz.io/logo/陕西卫视.png" group-title="Hotel_36.136.38.87:9901",陕西卫视
+http://36.136.38.87:9901/tsfile/live/0136_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="东南卫视" tvg-logo="https://tb.yubo.qzz.io/logo/东南卫视.png" group-title="Hotel_36.136.38.87:9901",东南卫视
+http://36.136.38.87:9901/tsfile/live/0137_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="江西卫视" tvg-logo="https://tb.yubo.qzz.io/logo/江西卫视.png" group-title="Hotel_36.136.38.87:9901",江西卫视
+http://36.136.38.87:9901/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://tb.yubo.qzz.io/logo/重庆卫视.png" group-title="Hotel_36.136.38.87:9901",重庆卫视
+http://36.136.38.87:9901/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="黑龙江卫视" tvg-logo="https://tb.yubo.qzz.io/logo/黑龙江卫视.png" group-title="Hotel_36.136.38.87:9901",黑龙江卫视
+http://36.136.38.87:9901/tsfile/live/0143_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="山西卫视" tvg-logo="https://tb.yubo.qzz.io/logo/山西卫视.png" group-title="Hotel_36.136.38.87:9901",山西卫视
+http://36.136.38.87:9901/tsfile/live/0118_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="河北卫视" tvg-logo="https://tb.yubo.qzz.io/logo/河北卫视.png" group-title="Hotel_36.136.38.87:9901",河北卫视
+http://36.136.38.87:9901/tsfile/live/0117_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://tb.yubo.qzz.io/logo/河南卫视.png" group-title="Hotel_36.136.38.87:9901",河南卫视
+http://36.136.38.87:9901/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="贵州卫视" tvg-logo="https://tb.yubo.qzz.io/logo/贵州卫视.png" group-title="Hotel_36.136.38.87:9901",贵州卫视
+http://36.136.38.87:9901/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="云南卫视" tvg-logo="https://tb.yubo.qzz.io/logo/云南卫视.png" group-title="Hotel_36.136.38.87:9901",云南卫视
+http://36.136.38.87:9901/tsfile/live/0119_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="辽宁卫视" tvg-logo="https://tb.yubo.qzz.io/logo/辽宁卫视.png" group-title="Hotel_36.136.38.87:9901",辽宁卫视
+http://36.136.38.87:9901/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="吉林卫视" tvg-logo="https://tb.yubo.qzz.io/logo/吉林卫视.png" group-title="Hotel_36.136.38.87:9901",吉林卫视
+http://36.136.38.87:9901/tsfile/live/0116_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://tb.yubo.qzz.io/logo/山东卫视.png" group-title="Hotel_36.136.38.87:9901",山东卫视
+http://36.136.38.87:9901/tsfile/live/0131_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="旅游卫视" tvg-logo="https://tb.yubo.qzz.io/logo/旅游卫视.png" group-title="Hotel_36.136.38.87:9901",旅游卫视
+http://36.136.38.87:9901/tsfile/live/0114_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="青海卫视" tvg-logo="https://tb.yubo.qzz.io/logo/青海卫视.png" group-title="Hotel_36.136.38.87:9901",青海卫视
+http://36.136.38.87:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="广西综艺" tvg-logo="https://tb.yubo.qzz.io/logo/广西综艺.png" group-title="Hotel_36.136.38.87:9901",广西综艺
+http://36.136.38.87:9901/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="广西影视" tvg-logo="https://tb.yubo.qzz.io/logo/广西影视.png" group-title="Hotel_36.136.38.87:9901",广西影视
+http://36.136.38.87:9901/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="广西都市" tvg-logo="https://tb.yubo.qzz.io/logo/广西都市.png" group-title="Hotel_36.136.38.87:9901",广西都市
+http://36.136.38.87:9901/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="广西新闻" tvg-logo="https://tb.yubo.qzz.io/logo/广西新闻.png" group-title="Hotel_36.136.38.87:9901",广西新闻
+http://36.136.38.87:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="大湾区卫视" tvg-logo="https://tb.yubo.qzz.io/logo/大湾区卫视.png" group-title="Hotel_36.136.38.87:9901",大湾区卫视
+http://36.136.38.87:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="https://tb.yubo.qzz.io/logo/金鹰卡通.png" group-title="Hotel_36.136.38.87:9901",金鹰卡通
+http://36.136.38.87:9901/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="卡酷卡通" tvg-logo="https://tb.yubo.qzz.io/logo/卡酷卡通.png" group-title="Hotel_36.136.38.87:9901",卡酷卡通
+http://36.136.38.87:9901/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="佳佳卡通" tvg-logo="https://tb.yubo.qzz.io/logo/佳佳卡通.png" group-title="Hotel_36.136.38.87:9901",佳佳卡通
+http://36.136.38.87:9901/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0

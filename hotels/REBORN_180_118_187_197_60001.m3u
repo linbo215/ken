@@ -1,0 +1,27 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV1.png" group-title="Hotel_180.118.187.197:60001",CCTV1
+http://180.118.187.197:60001/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV2.png" group-title="Hotel_180.118.187.197:60001",CCTV2
+http://180.118.187.197:60001/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV3.png" group-title="Hotel_180.118.187.197:60001",CCTV3
+http://180.118.187.197:60001/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV6.png" group-title="Hotel_180.118.187.197:60001",CCTV6
+http://180.118.187.197:60001/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV7" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV7.png" group-title="Hotel_180.118.187.197:60001",CCTV7
+http://180.118.187.197:60001/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV8.png" group-title="Hotel_180.118.187.197:60001",CCTV8
+http://180.118.187.197:60001/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV9" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV9.png" group-title="Hotel_180.118.187.197:60001",CCTV9
+http://180.118.187.197:60001/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV10" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV10.png" group-title="Hotel_180.118.187.197:60001",CCTV10
+http://180.118.187.197:60001/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV11" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV11.png" group-title="Hotel_180.118.187.197:60001",CCTV11
+http://180.118.187.197:60001/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV12.png" group-title="Hotel_180.118.187.197:60001",CCTV12
+http://180.118.187.197:60001/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV13.png" group-title="Hotel_180.118.187.197:60001",CCTV13
+http://180.118.187.197:60001/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV14" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV14.png" group-title="Hotel_180.118.187.197:60001",CCTV14
+http://180.118.187.197:60001/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-name="CCTV15" tvg-logo="https://tb.yubo.qzz.io/logo/CCTV15.png" group-title="Hotel_180.118.187.197:60001",CCTV15
+http://180.118.187.197:60001/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
